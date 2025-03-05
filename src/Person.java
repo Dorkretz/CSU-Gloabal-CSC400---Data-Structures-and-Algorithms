@@ -1,5 +1,5 @@
 /**
- * Represents a person with a first name, last name, and age.
+ * A person's info with first name, last name, and age.
  */
 public class Person {
     private String firstName;

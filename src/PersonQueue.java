@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A queue that stores Person objects and can sort them.
+ * A queue that stores Person objects and sorts them.
  */
 public class PersonQueue {
     private List<Person> queue;
@@ -36,7 +36,7 @@ public class PersonQueue {
     }
 
     /**
-     * Quick Sort helper method.
+     * Quick Sort method.
      *
      * @param low  Starting index.
      * @param high Ending index.
@@ -44,9 +44,9 @@ public class PersonQueue {
      */
     private void quickSort(int low, int high, String sortBy) {
         if (low < high) {
-            int pi = partition(low, high, sortBy);
-            quickSort(low, pi - 1, sortBy);
-            quickSort(pi + 1, high, sortBy);
+            int p = partition(low, high, sortBy);
+            quickSort(low, p - 1, sortBy);
+            quickSort(p + 1, high, sortBy);
         }
     }
 
